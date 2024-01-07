@@ -1,0 +1,37 @@
+@use '../scss/abstract/' as *;
+
+.footer {
+
+    margin-top:3.5rem ;
+    margin-bottom:5rem ;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 33px;
+
+        & .footer__paragraph {
+            font-family: var(--fontfamily);
+            font-size: 15px;
+            line-height: 32px;
+            letter-spacing: 0.083px;
+            color: $clr-grey;
+        }
+
+        & .footer__social {
+            display: flex;
+            gap: 25px;
+        }
+
+        @media (min-width:48rem) {
+            margin-inline: 2.4375rem;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+    }
+
+
+}
+

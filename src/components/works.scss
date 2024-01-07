@@ -1,0 +1,141 @@
+@use '../scss/abstract/' as *;
+
+
+.works {
+    background-color: $clr-darkBlue;
+    border-radius: 0.9375rem;
+
+    margin-top: 15rem;
+    
+
+    &__wrapper {
+
+        font-family: var(--fontfamily);
+        text-align: center;
+
+        & .works__text {
+            position: relative;
+        }
+
+
+        & .works__imgPerson {
+            position: absolute;
+           
+            width: 252px;
+            height: 402px;
+            background-image: url(../assets/image-jeremy-small.png);
+            background-size: cover;
+
+            inset: 0;
+            top: -180px;
+            margin-inline: auto;
+
+        }
+
+        & .works__pluma {
+            position: absolute;
+            width: 49px;
+            aspect-ratio: 1;
+            background-image: url(../assets/pattern-curved-line-2.svg);
+            background-size: cover;
+            inset: 0;
+            margin-inline: auto;
+            top: 216px;
+        }
+       
+
+        & .works__title {
+
+            position: relative;
+
+            color: $clr-white;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.417px;
+            padding-top: 270px;
+
+            span {
+                font-weight: bold;
+            }
+            
+        }
+
+        & .works__paragraph {
+            margin-inline: auto;
+            max-width: 21.4375rem;
+            margin-block:2.5rem ;
+            font-size: 1.125rem;
+            line-height: 2rem;
+            letter-spacing: 0.0056rem;
+            color: $clr-cream;
+        }
+
+        & .works__name {
+            font-size: 1.125rem;
+            color: $clr-cream;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.18px;
+
+        }
+
+        & .works__sub {
+            color: $clr-cream;
+            font-size: 1rem;
+            line-height: 1.625rem;
+            letter-spacing: 0.1563rem;
+            
+        }
+
+        @media (min-width:950px) {
+
+            & .works__text {
+                padding-top: 3.125rem;
+            }
+
+            & .works__imgPerson {
+               
+                right: auto;
+                left: 6.25rem;
+                top: auto;
+            }
+
+            & .works__pluma {
+                right: 28.25rem;
+                top: 11.5rem;
+
+            }
+
+            & .works__title {
+                padding-top:0px;
+              
+                width: 350px;
+                margin-inline: auto;
+                text-align: left;
+                line-height: 56px;
+                letter-spacing: -0.5px;
+            }
+
+            & .works__paragraph {
+                width: 350px;
+                margin-inline: auto;
+                text-align: left;
+            }
+
+            & .works__person {
+                width: 350px;
+                text-align: left;
+                margin-inline: auto;
+                padding-bottom: 3.125rem;
+            }
+        }
+
+    }
+
+    @media (min-width:768px) {
+        margin-inline: 2.4375rem;
+    }
+
+    
+}

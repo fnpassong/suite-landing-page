@@ -1,0 +1,52 @@
+@use '../scss/abstract/' as *;
+
+
+.numbers {
+
+    margin-top: 56px;
+    
+
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: var(--fontfamily);
+
+        & .numbers__num {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 3.5rem;
+        }
+
+        & .numbers__sub {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.625rem;
+            letter-spacing: 0.1563rem;
+            color: $clr-grey;
+            text-transform: uppercase;
+        }
+
+        @media (min-width:48rem) {
+            margin-top: 11.25rem;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @media (min-width:59.375rem) {
+            height: 100%;
+            margin-top: 0;
+            margin-inline-start: 16.875rem;
+            flex-direction: column;
+            justify-content:left;
+            
+        }
+
+    }
+
+
+
+}
